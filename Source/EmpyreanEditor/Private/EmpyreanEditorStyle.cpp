@@ -17,7 +17,7 @@ void FEmpyreanEditorStyle::Startup()
 	StyleSet->SetContentRoot(IPluginManager::Get().FindPlugin(TEXT("Empyrean"))->GetBaseDir());
 
 	// Register icon for Empyrean actor placement class.
-	FSlateImageBrush* empyreanIconBrush = new FSlateImageBrush(StyleSet->RootToContentDir(TEXT("Resources/SkyIcon"), TEXT(".png")), FVector2D(16.0f));
+	FSlateImageBrush* empyreanIconBrush = new FSlateImageBrush(StyleSet->RootToContentDir(TEXT("Resources/EmpyreanIcon"), TEXT(".png")), FVector2D(16.0f));
 	StyleSet->Set("Empyrean.Icon", empyreanIconBrush);
 
 	// Register icon for the EmpyreanSky class (for now uses the same as the placement icon).

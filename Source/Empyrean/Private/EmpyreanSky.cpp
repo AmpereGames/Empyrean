@@ -94,7 +94,7 @@ AEmpyreanSky::AEmpyreanSky()
 	{
 		EditorSprite->SetupAttachment(RootComponent);
 		EditorSprite->SetRelativeScale3D(FVector(0.5f));
-		UTexture2D* skySpriteTexture = FImageUtils::ImportFileAsTexture2D(FPaths::ProjectPluginsDir() + "Empyrean/Resources/SkySprite.png");
+		UTexture2D* skySpriteTexture = FImageUtils::ImportFileAsTexture2D(FPaths::ProjectPluginsDir() + "Empyrean/Resources/SkyThumbnail.png");
 		if (skySpriteTexture)
 		{
 			skySpriteTexture->CompressionSettings = TextureCompressionSettings::TC_EditorIcon;
