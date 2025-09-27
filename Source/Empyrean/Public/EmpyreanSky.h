@@ -12,7 +12,7 @@ class UExponentialHeightFogComponent;
 /*
  * Actor class the holds all the needed components for a sky representation.
  */
-UCLASS(NotBlueprintable, ClassGroup = Empyrean, MinimalAPI, HideCategories = (Actor, Collision, DataLayers, Input, LOD, HLOD, Networking, Physics, WorldPartition))
+UCLASS(ClassGroup = Empyrean, HideCategories = (Actor, Collision, DataLayers, Input, LOD, HLOD, Networking, Physics, WorldPartition), MinimalAPI, NotBlueprintable)
 class AEmpyreanSky : public AActor
 {
 	GENERATED_BODY()

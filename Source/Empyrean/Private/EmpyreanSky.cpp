@@ -15,8 +15,6 @@
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(EmpyreanSky)
 
-#define LOCTEXT_NAMESPACE "Empyrean"
-
 AEmpyreanSky::AEmpyreanSky()
 {
 	// Start with tick disabled and enable it if needed.
@@ -104,8 +102,8 @@ AEmpyreanSky::AEmpyreanSky()
 			EditorSprite->Sprite = skySpriteTexture;
 		}
 		EditorSprite->SetMobility(EComponentMobility::Static);
-		EditorSprite->SpriteInfo.Category = TEXT("EmpyreanSky");
-		EditorSprite->SpriteInfo.DisplayName = LOCTEXT("EmpyreanSky", "EmpyreanSky");
+		EditorSprite->SpriteInfo.Category = TEXT("Empyrean");
+		EditorSprite->SpriteInfo.DisplayName = INVTEXT("EmpyreanSky");
 		EditorSprite->SetUsingAbsoluteScale(true);
 		EditorSprite->bIsScreenSizeScaled = true;
 	}
@@ -180,5 +178,3 @@ void AEmpyreanSky::UpdateSunMaterial()
 		SkyMaterialCollectionInstance->SetVectorParameterValue(FName("SunLightDirection"), SunLightComponent->GetForwardVector());
 	}
 }
-
-#undef LOCTEXT_NAMESPACE
