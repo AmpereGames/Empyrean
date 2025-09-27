@@ -1,2 +1,2 @@
 # Empyrean
-A custom sky and weather system for Unreal Engine.
+A unified sky and weather system scalable to run on every platform for Unreal Engine projects.
