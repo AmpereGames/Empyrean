@@ -1,4 +1,4 @@
-// Copyright (c) 2025 Pixane.
+// Copyright (c) 2025 Ampere Games.
 
 #include "EmpyreanEditor.h"
 #include "EmpyreanSky.h"
