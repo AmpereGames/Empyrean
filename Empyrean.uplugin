@@ -3,7 +3,7 @@
 	"Version": 1,
 	"VersionName": "1.0",
 	"FriendlyName": "Empyrean",
-	"Description": "A unified sky and weather system scalable to run on every platform for Unreal Engine projects.",
+	"Description": "A unified sky and weather system scalable to run on every platform.",
 	"Category": "Content",
 	"CreatedBy": "Ampere Games",
 	"CreatedByURL": "https://github.com/AmpereGames",
