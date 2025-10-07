@@ -27,14 +27,14 @@ void FEmpyreanEditorModule::StartupModule()
 
 void FEmpyreanEditorModule::ShutdownModule()
 {
-	// Clean the Editor Style.
-	FEmpyreanEditorStyle::Shutdown();
-
 	// Unregister the custom Actor Placement category.
 	IPlacementModeModule::Get().UnregisterPlacementCategory("Empyrean");
 
 	// Clean the module.
 	FModuleManager::Get().OnModulesChanged().RemoveAll(this);
+
+	// Clean the Editor Style.
+	FEmpyreanEditorStyle::Shutdown();
 }
 
 #undef LOCTEXT_NAMESPACE
